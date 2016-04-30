@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0049)http://razum.si/jQuery-calendar/TimeCalendar.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		
+
+		<title>jQuery Calendar with time picker example</title>
+
+		<script type="text/javascript" src="./jQuery Calendar with time picker example_files/jquery.js"></script>
+
+		<script type="text/javascript" src="./jQuery Calendar with time picker example_files/jquery-calendar.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="./jQuery Calendar with time picker example_files/jquery-calendar.css">
+
+		<link rel="stylesheet" type="text/css" href="./jQuery Calendar with time picker example_files/styles.css">
+
+		<script type="text/javascript">
+
+		//<![CDATA[
+
+			$(document).ready(function (){ 
+
+				$("#calendar1, #calendar2").calendar();
+
+				$("#calendar1_alert").click(function(){alert(popUpCal.parseDate($('#calendar1').val()))});
+
+			});
+
+		//]]>
+
+		</script>
+
+	</head>
+
+	<body>
+		<div>
+
+			<h1>jQuery Calendar with time picker</h1>
+
+			<p>
+
+				While we thought the jQuery Calendar was the best calendar out there, we needed a way to select times. So the jQuery Calendar was extended with a basic time selector. It supports both AM/PM and 24 hour notation.
+
+				In addition, a function was added to the calendar that parses a text string and outputs a Javascript Date object; a possible use case is the transformation of the selected date into a custom format before submitting it to the server.
+
+				Keyboard shortcuts for changing the time are not supported yet and are also not a high priority for us, so anyone willing to add them is more than welcome to.
+
+			</p>
+
+			<p>
+
+				A single setting was added to the jQuery Calendar class: <tt>timeSeparators</tt>. It takes an array of strings as an argument with the following members:
+
+			</p>
+
+			<ol>
+
+				<li>The date/time separator (separates the date part from the time part)</li>
+
+				<li>The hour/minute separator</li>
+
+				<li><i>(optional)</i> The AM designator</li>
+
+				<li><i>(optional)</i> The PM designator</li>
+
+			</ol>
+
+			<p>
+
+				Examples of the time descriptor format are <tt>timeSeparators:[' ',':']</tt> for the 24 hour format and <tt>timeSeparators:[' ',':','AM','PM']</tt> for the AM/PM format.
+
+			</p>
+			
+			<p>
+				<b>Update:</b> I have fixed some bugs since the original publication. Thanks to everyone who emailed me patches!
+			</p>
+
+			<p class="disclaimer">
+
+				<b>Be advised:</b> The time picker may be buggy and/or the original jQuery Calendar functionality may be hampered. Use this version at own risk and check the original version before blaiming jQuery Calendar authors for any bugs or requesting support from them!
+
+			</p>
+
+			<fieldset> 
+
+				<legend>Example</legend>
+
+				<input type="text" id="calendar1" class="calendarFocus"><span class="calendar_append"></span>
+
+				<input type="button" id="calendar1_alert" value="Alert datetime object">
+
+			</fieldset>
+
+			<p class="smallbottom">
+
+				Original code: <a href="http://marcgrabanski.com/code/jquery-calendar/">jQuery Calendar, Written by Marc Grabanski and extended by Keith Wood</a>
+
+			</p>
+
+			<p class="smallbottom">
+
+				Time picker added by: <a href="http://razum.si/">Gregor Petrin Kraškovic, Razum d.o.o.</a>
+
+			</p>
+
+		</div>
+
+	
+
+<div id="calendar_div"></div><div style="position: fixed; margin: 0px; padding: 0px; z-index: 999999; top: 0px; right: 0px; display: block; "><div id="default-tab-outer-wrapper">
+	<div class="default-tab-inner-wrapper">
+		<a href="javascript:void(0);" class="default-tab-button-up">
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+		</a>
+		<div class="default-tab-container-wrapper">
+			<a href="javascript:void(0);" class="default-tab-button-list">
+				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="background-image: url(http://assets.defaulttab.com/search_here.ico); background-position: 2px 0px; background-repeat: no-repeat no-repeat; ">
+			</a>
+			<input class="DefaultTab_Search_Results_main_search_box_injection_search_text_input DefaultTab_Search_Results_main_search_box_injection_search_text_input_default_text ui-autocomplete-input" type="text" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+		</div>
+	</div>
+</div></div><ul class="DefaultTab_Search_Results_search_engines_menu ui-menu ui-widget ui-widget-content ui-corner-all" style="width: 200px; position: absolute; z-index: 999999; display: none; " role="listbox" aria-activedescendant="ui-active-menuitem"><li style="vertical-align: middle; " class="ui-menu-item" role="menuitem"><a href="http://razum.si/jQuery-calendar/TimeCalendar.html#" style="font-size: 1px; text-align: left; " class="ui-corner-all" tabindex="-1"><em style="float: left; width: 16px; height: 16px; margin-right: 5px; background-image: url(http://assets.defaulttab.com/search_here.ico); "></em><font style="font: 12px Arial !important; color:black !important;">Search Here</font></a></li><li style="vertical-align: middle; " class="ui-menu-item" role="menuitem"><a href="http://razum.si/jQuery-calendar/TimeCalendar.html#" style="font-size: 1px; text-align: left; " class="ui-corner-all" tabindex="-1"><em style="float: left; width: 16px; height: 16px; margin-right: 5px; background-image: url(http://assets.defaulttab.com/facebook.ico); "></em><font style="font: 12px Arial !important; color:black !important;">Facebook</font></a></li><li style="vertical-align: middle; " class="ui-menu-item" role="menuitem"><a href="http://razum.si/jQuery-calendar/TimeCalendar.html#" style="font-size: 1px; text-align: left; " class="ui-corner-all" tabindex="-1"><em style="float: left; width: 16px; height: 16px; margin-right: 5px; background-image: url(http://assets.defaulttab.com/youtube.ico); "></em><font style="font: 12px Arial !important; color:black !important;">YouTube</font></a></li><li style="vertical-align: middle; " class="ui-menu-item" role="menuitem"><a href="http://razum.si/jQuery-calendar/TimeCalendar.html#" style="font-size: 1px; text-align: left; " class="ui-corner-all" tabindex="-1"><em style="float: left; width: 16px; height: 16px; margin-right: 5px; background-image: url(http://assets.defaulttab.com/amazon.ico); "></em><font style="font: 12px Arial !important; color:black !important;">Amazon</font></a></li><li style="vertical-align: middle; " class="ui-menu-item" role="menuitem"><a href="http://razum.si/jQuery-calendar/TimeCalendar.html#" style="font-size: 1px; text-align: left; " class="ui-corner-all" tabindex="-1"><em style="float: left; width: 16px; height: 16px; margin-right: 5px; background-image: url(http://assets.defaulttab.com/wikipedia.ico); "></em><font style="font: 12px Arial !important; color:black !important;">Wikipedia</font></a></li><li style="vertical-align: middle; " class="ui-menu-item" role="menuitem"><a href="http://razum.si/jQuery-calendar/TimeCalendar.html#" style="font-size: 1px; text-align: left; " class="ui-corner-all" tabindex="-1"><em style="float: left; width: 16px; height: 16px; margin-right: 5px; background-image: url(http://assets.defaulttab.com/twitter.ico); "></em><font style="font: 12px Arial !important; color:black !important;">Twitter</font></a></li><li style="vertical-align: middle; " class="ui-menu-item" role="menuitem"><a href="http://razum.si/jQuery-calendar/TimeCalendar.html#" style="font-size: 1px; text-align: left; " class="ui-corner-all" tabindex="-1"><em style="float: left; width: 16px; height: 16px; margin-right: 5px; background-image: url(http://assets.defaulttab.com/ebay.ico); "></em><font style="font: 12px Arial !important; color:black !important;">eBay</font></a></li></ul><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1000000; top: 0px; left: 0px; display: none; "></ul></body></html>

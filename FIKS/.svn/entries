@@ -1,0 +1,38 @@
+10
+
+dir
+313
+svn+ssh://192.168.1.98/var/cellulantsrepo/FIKS/FIKS
+svn+ssh://192.168.1.98/var/cellulantsrepo
+
+
+
+2012-12-05T20:47:27.105141Z
+304
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c226d91e-e368-4cca-85c3-8d4aeb3f9012
+
+
+
+
+
+
+0
+
+nbproject
+dir
+
